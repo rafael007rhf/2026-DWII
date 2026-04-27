@@ -1,0 +1,200 @@
+/**
+ * ===============================================================
+ * Arquivo: includes/style.php 
+ * Disciplina: Desenvolvimento Web II (2026-DWII)
+ * Aula: 03 - Aruqitetura Web e Introdução ao PHP
+ * Autor: Mandy Abade Antunes
+ * ===============================================================
+ */
+
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f0ff;
+  color: #2d1b4e;
+  line-height: 1.7;
+}
+
+header {
+  padding: 30px 40px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.sobre{
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 40px;
+}
+
+.hero{
+  margin: 20px auto;
+  padding: 0 40px;
+}
+
+h1.titulo-secao {
+  color: #7b5dc9;
+  margin-bottom: 24px;
+}
+
+nav {
+  background: #7b5dc9; 
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+nav a.ativo {
+  color: #e9ddff;
+  border-bottom: 2px solid #e9ddff;
+}
+
+.card {
+  background: white;
+  padding: 28px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border-left: 4px solid #7b5dc9;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #5a3fb5;
+  margin-bottom: 12px;
+}
+
+.card p {
+  margin-bottom: 0;
+  color: #4b3c6e;
+}
+
+.form-container {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+label:first-of-type { margin-top: 0; }
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8cdf7;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8cdf7;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+textarea { resize: vertical; }
+
+button[type="submit"] {
+  margin-top: 20px;
+  background: #7b5dc9;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background: #5a3fb5;
+}
+
+
+.alerta-erro h3 { color: #cf1c21; margin-top: 0; }
+
+.alerta-sucesso {
+  background: #efeaff;
+  color: #065f46;
+  border-left: 4px solid #065f4698;
+  border-radius: 0 8px 8px 0;
+  padding: 18px 22px;
+  margin-top: 20px;
+}
+
+.alerta-erro {
+  background: #fdecec;
+  color: #991b1b;
+  border-left: 4px solid #e72a30;
+  border-radius: 0 8px 8px 0;
+  padding: 18px 22px;
+  margin-top: 20px;
+}
+
+
+.alerta-sucesso h3 { color: #7b5dc9; margin-top: 0; }
+
+footer {
+  background: #3e2f6f;
+  color: #e9ddff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.categorias {
+  margin-bottom: 20px;
+}
+
+.categorias a {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px 10px;
+  text-decoration: none;
+  background: #efeaff;
+  color: #5a3fb5;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.categorias a:hover {
+  background: #7b5dc9;
+  color: white;
+}
+
+.flash-message {
+    background-color: #d1fae5; /* verde claro */
+    color: #065f46;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    font-weight: bold;
+    border: 1px solid #10b981;
+}
