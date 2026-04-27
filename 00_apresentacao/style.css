@@ -1,0 +1,152 @@
+/* ============================================================
+   00_apresentacao — Apresentação Pessoal
+   Autor: Murilo Néfi de Faria
+   ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(180deg, #f5f0e8 0%, #ffffff 100%);
+    color: #2a2438;
+    line-height: 1.65;
+    min-height: 100vh;
+}
+
+/* ----- Hero ----- */
+.hero {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(201,84,58,0.18), transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(31,29,43,0.12), transparent 50%),
+        #1f1d2b;
+    color: #fdfcf7;
+    padding: 90px 24px 70px;
+    text-align: center;
+    position: relative;
+    border-bottom: 6px solid #c9543a;
+}
+
+.hero-conteudo {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 8px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 1.05em;
+    font-weight: 300;
+    color: #e6e1d3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 14px;
+}
+
+.hero-subtitulo {
+    font-style: italic;
+    color: #c9543a;
+    font-size: 1.1em;
+}
+
+/* ----- Main ----- */
+main {
+    max-width: 880px;
+    margin: -50px auto 0;
+    padding: 0 24px 60px;
+    position: relative;
+    z-index: 2;
+}
+
+main section {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 36px;
+    margin-bottom: 26px;
+    box-shadow: 0 4px 20px rgba(31,29,43,0.08);
+}
+
+main h3 {
+    font-size: 1.4em;
+    margin-bottom: 16px;
+    color: #1f1d2b;
+    border-bottom: 2px solid #c9543a;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+main p {
+    margin-bottom: 14px;
+    color: #463f55;
+}
+
+/* ----- Apresentação ----- */
+.apresentacao {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 36px;
+    align-items: center;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid #c9543a;
+    box-shadow: 8px 8px 0 #1f1d2b;
+}
+
+.bio h3 {
+    margin-bottom: 12px;
+}
+
+/* ----- Skills ----- */
+.lista-skills {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.lista-skills li {
+    padding: 10px 16px;
+    background: #f5f0e8;
+    border-left: 4px solid #c9543a;
+    border-radius: 2px;
+    font-size: 0.95em;
+}
+
+/* ----- Footer ----- */
+footer {
+    text-align: center;
+    padding: 28px 20px;
+    background: #1f1d2b;
+    color: #c9c5d3;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+}
+
+/* ----- Responsivo ----- */
+@media (max-width: 700px) {
+    .hero { padding: 60px 20px 50px; }
+    .hero h1 { font-size: 2.1em; }
+    .apresentacao {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .foto-perfil {
+        margin: 0 auto;
+        width: 160px;
+        height: 160px;
+    }
+    main section { padding: 24px; }
+}

@@ -1,0 +1,307 @@
+/* ============================================================
+   Folha de estilos global — 2026-DWII
+   Autor: Murilo Néfi de Faria
+   ============================================================ */
+
+:root {
+    --cor-fundo: #fdfcf7;
+    --cor-texto: #1f1d2b;
+    --cor-suave: #5c5870;
+    --cor-destaque: #c9543a;
+    --cor-borda: #e6e1d3;
+    --cor-card: #ffffff;
+    --cor-sucesso: #2e7d52;
+    --cor-erro: #b3331e;
+    --cor-aviso-fundo: #fef3eb;
+    --cor-sucesso-fundo: #ecf5f0;
+    --cor-erro-fundo: #fbecea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----- Cabeçalho e navegação ----- */
+header {
+    background: var(--cor-card);
+    border-bottom: 3px double var(--cor-borda);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 14px 18px;
+    background: var(--cor-texto);
+}
+
+nav a {
+    padding: 8px 18px;
+    color: var(--cor-fundo);
+    text-decoration: none;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: background 0.18s;
+}
+
+nav a:hover { background: rgba(255,255,255,0.12); }
+
+nav a.ativo {
+    background: var(--cor-destaque);
+    color: #fff;
+}
+
+/* ----- Container e seções ----- */
+.container {
+    max-width: 920px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 24px 28px;
+    background: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    border-radius: 4px;
+}
+
+.titulo-secao {
+    font-size: 1.8em;
+    margin-bottom: 18px;
+    color: var(--cor-texto);
+    border-left: 5px solid var(--cor-destaque);
+    padding-left: 14px;
+}
+
+/* ----- Formulário ----- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formulario label,
+form label {
+    font-weight: bold;
+    color: var(--cor-suave);
+    font-size: 0.95em;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea,
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: 2px;
+    font-size: 1em;
+    font-family: inherit;
+    background: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+.formulario textarea,
+form textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* ----- Botões ----- */
+.btn,
+button[type="submit"],
+form button {
+    display: inline-block;
+    padding: 11px 22px;
+    background: var(--cor-texto);
+    color: var(--cor-fundo);
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 0.95em;
+    font-family: inherit;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+
+.btn:hover,
+button[type="submit"]:hover { background: var(--cor-destaque); }
+
+.btn-secundario {
+    background: transparent;
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-texto);
+}
+
+.btn-secundario:hover {
+    background: var(--cor-texto);
+    color: var(--cor-fundo);
+}
+
+/* ----- Confirmação ----- */
+.confirmacao {
+    max-width: 640px;
+    margin: 60px auto;
+    padding: 36px;
+    background: var(--cor-card);
+    border-left: 5px solid var(--cor-sucesso);
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* ----- Cards (catálogo) ----- */
+.card {
+    background: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+}
+
+.card-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.card-aula {
+    background: var(--cor-card);
+    border: 1px solid var(--cor-borda);
+    padding: 22px;
+    border-radius: 4px;
+}
+
+.tag-categoria {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--cor-aviso-fundo);
+    color: var(--cor-destaque);
+    border-radius: 2px;
+    font-size: 0.8em;
+    text-decoration: none;
+    margin: 3px;
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+
+.link-detalhe {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95em;
+}
+
+.link-detalhe:hover { text-decoration: underline; }
+
+.link-voltar {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--cor-suave);
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.link-voltar:hover { color: var(--cor-destaque); }
+
+/* ----- Filtros ----- */
+.filtros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: end;
+    margin-bottom: 18px;
+    padding: 16px;
+    background: var(--cor-aviso-fundo);
+    border-radius: 4px;
+}
+
+.categorias-topo {
+    margin: 14px 0 22px;
+}
+
+.tabela-detalhe {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.tabela-detalhe td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.tabela-detalhe tr td:first-child {
+    font-weight: bold;
+    color: var(--cor-suave);
+    width: 200px;
+}
+
+/* ----- Alertas ----- */
+.alerta-erro {
+    background: var(--cor-erro-fundo);
+    border-left: 5px solid var(--cor-erro);
+    padding: 14px 18px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    color: var(--cor-erro);
+}
+
+.lista-erros {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-erros li {
+    padding: 4px 0;
+}
+
+.alerta-sucesso {
+    background: var(--cor-sucesso-fundo);
+    border-left: 5px solid var(--cor-sucesso);
+    padding: 16px 18px;
+    margin-bottom: 18px;
+    border-radius: 2px;
+    color: var(--cor-sucesso);
+}
+
+.contador {
+    color: var(--cor-suave);
+    font-style: italic;
+    margin-bottom: 14px;
+}
+
+/* ----- Footer ----- */
+footer {
+    margin-top: auto;
+    border-top: 3px double var(--cor-borda);
+    background: var(--cor-card);
+    padding: 22px;
+    text-align: center;
+    color: var(--cor-suave);
+    font-size: 0.9em;
+}
+
+/* ----- Responsivo ----- */
+@media (max-width: 600px) {
+    .container { padding: 18px; margin: 20px 12px; }
+    nav { padding: 10px; }
+    nav a { padding: 6px 12px; font-size: 0.8em; }
+    .filtros { flex-direction: column; align-items: stretch; }
+}
