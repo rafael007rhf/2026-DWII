@@ -3,7 +3,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Aula       : 08 — CRUD: Create e Read
  * Arquivo    : 05_crud/editar.php
- * Autor: Mandy Abade Antunes
+ * Autor: RAFAEL HENRIQUE FREIRE
  * Data: 06/04/2026
  * Descrição: implementa o Update do CRUD. Este arquivo tem tres responsabilidades: 
  * validar o id recebido via GET; 

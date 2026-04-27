@@ -3,13 +3,13 @@
  * ===============================================================
  * Arquivo: 01_php-intro/sobre.php 
  * Disciplina: Desenvolvimento Web II (2026-DWII)
- * Autor: Mandy Abade Antunes
+ * Autor: RAFAEL HENRIQUE FREIRE
  * ===============================================================
  */
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-    $nome = "Mandy Abade Antunes";
+    $nome = "RAFAEL HENRIQUE FREIRE";
     $profissao = "Estudante de Tecnologia";
     $curso = "Técnico em Informática - IFPR";
     $pagina_atual = "sobre";

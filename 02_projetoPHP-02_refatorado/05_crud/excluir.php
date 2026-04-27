@@ -3,7 +3,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Aula       : 08 – CRUD Completo: Delete
  * Arquivo    : 05_crud/excluir.php
- * Autor      : Mandy Abade Antunes
+ * Autor      : RAFAEL HENRIQUE FREIRE
  * Data       : 12/04/2026
  * Descrição  : Implementa o D do CRUD (Delete).
  * Este arquivo tem três responsabilidades:

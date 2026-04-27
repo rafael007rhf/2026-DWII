@@ -1,7 +1,7 @@
 <!--
     Disciplina: Desenvolvimento Web II (DWII)
     Aula: 05 - PHP + MariaDB: peristência de dados via PDO
-    Autor: Mandy Abade Antunes
+    Autor: RAFAEL HENRIQUE FREIRE
     Data: 10/03/2026
     -->
 

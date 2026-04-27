@@ -8,7 +8,7 @@ Repositório para a Disciplina Desenvolvimento Web II - ProfeBerssa - IFPR - CRP
 
 ## 👤 Estudante
 
-- **Nome:** MANDY ABADE ANTUNES
+- **Nome:** RAFAEL HENRIQUE FREIRE
 - **Turma:** 3º ano — Técnico em Informática Integrado ao Ensino Médio
 - **Ano:** 2026
 
@@ -30,7 +30,7 @@ Repositório para a Disciplina Desenvolvimento Web II - ProfeBerssa - IFPR - CRP
 
 ## 🔗 Como visualizar
 
-1. Clone o repositório: `git clone https://github.com/mandyabade/2026-DWII`
+1. Clone o repositório: `git clone https://github.com/rafael007rhf/2026-DWII`
 2. Acesse a pasta `00_apresentacao/`
 3. Abra o arquivo `index.html` no navegador
 

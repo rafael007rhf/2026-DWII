@@ -5,12 +5,12 @@
  * Arquivo: 01_php-intro/index.php 
  * Disciplina: Desenvolvimento Web II (2026-DWII)
  * Aula: 03 - Aruqitetura Web e Introdução ao PHP
- * Autor: Mandy Abade Antunes
+ * Autor: RAFAEL HENRIQUE FREIRE
  * ===============================================================
  */
 
 
-    $nome = "Mandy Abade Antunes";
+    $nome = "RAFAEL HENRIQUE FREIRE";
     $profissao = "Estudante de Tecnologia";
     $curso = "Técnico em Informática - IFPR";
     $pagina_atual = "inicio";

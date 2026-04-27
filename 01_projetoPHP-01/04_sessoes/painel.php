@@ -3,7 +3,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Aula       : 06 – Autenticação com sessões e controle de acesso
  * Arquivo    : 04_sessoes/painel.php
- * Autor      : Mandy Abade Antunes
+ * Autor      : RAFAEL HENRIQUE FREIRE
  */
 
 session_start();

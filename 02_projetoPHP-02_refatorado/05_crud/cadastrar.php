@@ -3,7 +3,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Aula       : 07 — CRUD: Create e Read
  * Arquivo    : 05_crud/cadastrar.php
- * Autor: Mandy Abade Antunes
+ * Autor: RAFAEL HENRIQUE FREIRE
  * Data: 30/03/2026
  * Descrição: Exibe o formulario de cadstro e processa o insert
  */

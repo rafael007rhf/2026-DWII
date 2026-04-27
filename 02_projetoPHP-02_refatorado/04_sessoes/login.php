@@ -3,7 +3,7 @@
  * Disciplina: Desenvolvimento Web II (DWII)
  * Aula: 06 - Autenticação com sessões e controle de acesso
  * Arquivo: 04_sessoes/login.php
- * Autor: Mandy Abade Antunes
+ * Autor: RAFAEL HENRIQUE FREIRE
  * Data: 23/03/2026
  */
 

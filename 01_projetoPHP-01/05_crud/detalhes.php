@@ -3,7 +3,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Aula       : 07 — CRUD: Create e Read
  * Arquivo    : 05_crud/detalhes.php
- * Autor: Mandy Abade Antunes
+ * Autor: RAFAEL HENRIQUE FREIRE
  * Data: 05/04/2026
  * Descrição: Lita todos os projetos cadastrados no banco (read)
  */

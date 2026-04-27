@@ -4,7 +4,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Projeto    : Portfólio Pessoal — versão refatorada
  * Arquivo    : index.php  (homepage do portfólio)
- * Autor      : Mandy Abade Antunes
+ * Autor      : RAFAEL HENRIQUE FREIRE
  * Data       : 13/04/2026
  * Descrição  : Homepage do portfólio pessoal.
  *              Converte a apresentação estática (HTML puro) em
@@ -17,8 +17,8 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 $pagina_atual  = 'inicio';
 $caminho_raiz  = './';
-$titulo_pagina = 'Portfólio — Mandy Abade Antunes';
-$nome      = 'Mandy Abade Antunes';
+$titulo_pagina = 'Portfólio — RAFAEL HENRIQUE FREIRE';
+$nome      = 'RAFAEL HENRIQUE FREIRE';
 $descricao = 'Sou estudante do IFPR CRPG, faço o curso técnico de Informática integrado ao ensino médio.'
             . 'Gosto de progamar e principalmente de banco de dados, '
             . 'mas fora da vida acadêmica gosto de ir à academia, fazer as unhas,'

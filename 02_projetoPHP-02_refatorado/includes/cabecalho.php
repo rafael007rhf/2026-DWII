@@ -4,7 +4,7 @@
  * Disciplina : Desenvolvimento Web II (DWII)
  * Projeto    : Portfólio Pessoal — versão refatorada
  * Arquivo    : includes/cabecalho.php
- * Autor      : Mandy Abade Antunes
+ * Autor      : RAFAEL HENRIQUE FREIRE
  * Data       : 13/04/2026
  * Descrição  : Cabeçalho global do projeto.
  *              Responsabilidades:

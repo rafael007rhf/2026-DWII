@@ -5,7 +5,7 @@
  * ARQUIVO      : index.php (raiz do repositório 2026-DWII)
  * Disciplina   : Desenvolvimento Web II (2026-DWII)
  * Aula         : 04 - -PHP para Web: Formulários, GET e POST
- * Autor        : Mandy Abade Antunes
+ * Autor        : RAFAEL HENRIQUE FREIRE
  * Conceitos  A  : Ponto de entrada, array associativo, foreach, 
  *                date(), htmlspecialchars()
  * ===============================================================
@@ -17,7 +17,7 @@
  * Cabeçalho, nav e rodapé são definidos inline aqui.
 */
 
-$nome = "Mandy Abade Antunes";
+$nome = "RAFAEL HENRIQUE FREIRE";
 $subtitulo = "Repositório 2026 - Desenvolvimento Web II";
 
 $aulas = [

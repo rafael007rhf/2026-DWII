@@ -1,6 +1,6 @@
 # 📁 Portfólio Pessoal — Versão Refatorada
 
-Autor: Mandy Abade Antunes
+Autor: RAFAEL HENRIQUE FREIRE
 Turma: 3º ano
 Curso: Técnico em Informática
 Disciplina: Desenvolvimento Web II
