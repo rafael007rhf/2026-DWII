@@ -1,8 +1,5 @@
 <?php
-    require_once __DIR__ . '/../04_sessoes/includes/auth.php';
-    requer_login();
-
-    require_once __DIR__ . '/includes/conexao.php';
+    require_once __DIR__ . '/05_crud/includes/conexao.php';
     
     
     $pdo = conectar();
@@ -61,12 +58,12 @@
     }
 
     $titulo_pagina = 'Meus Projetos - Portfólio';
-    $caminho_raiz = '../';
+    $caminho_raiz = './';
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <?php require_once __DIR__ . '/../includes/cabecalho.php'; ?>
+    <?php require_once __DIR__ . '/includes/cabecalho.php'; ?>
 </head>
 <body>
     <div class="container">
@@ -76,36 +73,15 @@
                 <input type="text" name="busca" placeholder="Buscar...">
                 <button type="submit">Buscar</button>
             </form>
-            <a class="voltar" href="cadastrar.php">+ Novo Projeto</a>
         </div>
         <?php if ($erroMsg): ?>
             <div class="alerta-erro">
                 <?php echo htmlspecialchars($erroMsg); ?>
             </div>
-        <?php endif; ?>
-        
-        <?php if ($cadastroOk): ?>
-            <div class= "alerta-sucesso">
-                <p> Projeto cadastrado com sucesso!</p>
-            </div>
-        <?php endif; ?>
-
-        <?php if ($editadoOk): ?>
-            <div class= "alerta-sucesso">
-                <p> Projeto atualizado com sucesso!</p>
-            </div>
-        <?php endif; ?>
-
-        <?php if ($excluidoOk): ?>
-            <div class= "alerta-sucesso">
-                <p> Projeto removido com sucesso!</p>
-            </div>
-        <?php endif; ?>
-        
+        <?php endif; ?>       
         <?php if (empty($projetos)): ?>
             <div class="card">
                 <p>Nenhum projeto cadastrado ainda.</p>
-                <a href="cadastrar.php">Cadastrar o primeiro projeto</a>
             </div>
         <?php else: ?>
             <div>
@@ -125,10 +101,6 @@
                                 Ver no GitHub
                             </a>
                         <?php endif; ?>
-                        <div>
-                            <a class="detalhes" href="editar.php?id=<?php echo (int) $projeto['id']; ?>">Editar</a>
-                            <a class="detalhes" href="excluir.php?id=<?php echo (int) $projeto['id']; ?>">Excluir</a>
-                        </div>
                     </div>
                 <?php endforeach; ?>
             </div>
@@ -146,6 +118,6 @@
             </p>
         <?php endif; ?>
     </div>
-    <?php require_once __DIR__ . '/../includes/rodape.php'; ?>
+    <?php require_once __DIR__ . '/includes/rodape.php'; ?>
 </body>
 </html>

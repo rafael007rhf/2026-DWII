@@ -1,14 +1,13 @@
-# 2026-DWII
+# 2026-DWII — Desenvolvimento Web II
 
-Repositório para a Disciplina Desenvolvimento Web II - ProfeBerssa - IFPR - CRPG
-
+Repositório da disciplina **Desenvolvimento Web II** — 2026
 **Profe. Berssa** | IFPR — Centro de Referência Ponta Grossa
 
 ---
 
 ## 👤 Estudante
 
-- **Nome:** RAFAEL HENRIQUE FREIRE
+- **Nome:** Rafael Henrique Freire
 - **Turma:** 3º ano — Técnico em Informática Integrado ao Ensino Médio
 - **Ano:** 2026
 

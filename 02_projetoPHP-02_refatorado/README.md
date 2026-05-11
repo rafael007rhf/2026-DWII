@@ -1,37 +1,97 @@
-# 📁 Portfólio Pessoal — Versão Refatorada
+# Projeto PHP Refatorado — Portfólio Pessoal
 
-Autor: RAFAEL HENRIQUE FREIRE
-Turma: 3º ano
-Curso: Técnico em Informática
-Disciplina: Desenvolvimento Web II
-Ano: 2026
+## 📌 Sobre o projeto
 
-## 📌 Sobre o proACjeto
-Este projeto consiste em um portfólio pessoal desenvolvido na disciplina de Desenvolvimento Web II. O objetivo principal é apresentar informações acadêmicas, projetos e formas de contato de maneira organizada e dinâmica, utilizando PHP.
+Este projeto consiste na refatoração de um portfólio pessoal desenvolvido em PHP, com o objetivo de aplicar boas práticas de organização de código, reutilização de componentes e separação de responsabilidades.
 
-Nesta versão refatorada, o foco foi melhorar a estrutura do código, promover reutilização de componentes e aplicar boas práticas de desenvolvimento web, tornando o projeto mais limpo, modular e fácil de manter.
+A proposta foi transformar páginas originalmente estáticas em uma aplicação PHP modular, utilizando includes para padronizar o layout e melhorar a manutenção do sistema.
 
 ---
 
-## 🗂️ Estrutura de arquivos
+## 📁 Estrutura de arquivos
 
-```bash
+```
 02_projetoPHP-02_refatorado/
 │
 ├── index.php
+├── sobre.php
 ├── includes/
 │   ├── cabecalho.php
 │   ├── nav.php
 │   ├── rodape.php
-│   └── style.css
+│   └── estilo.css
 │
 ├── 01_php-intro/
-│   ├── sobre.php
-│   └── projetos.php
-│
-└── 00_apresentacao/
-    └── imgs/
+├── 02_formularios/
+├── 03_pdo/
+├── 04_sessoes/
+└── 05_crud/
+```
 
-Comando para iniciar o servidor e acessor o projeto: 
-        php -S localhost:8000
+---
 
+## 🔧 Decisões de refatoração
+
+### 1. Separação de estrutura e conteúdo
+
+**Problema:** O código HTML estava repetido em várias páginas, dificultando manutenção e alterações globais.
+**Solução:** Criação dos arquivos `cabecalho.php` e `rodape.php`, responsáveis pela estrutura base da página.
+**Motivo:** Evitar duplicação de código e permitir alterações centralizadas.
+
+---
+
+### 2. Inclusão dinâmica com `include` e `__DIR__`
+
+**Problema:** Caminhos relativos inconsistentes causavam erros ao incluir arquivos em diferentes níveis de diretório.
+**Solução:** Utilização de `include __DIR__ . '/includes/...';` para garantir caminhos absolutos baseados no diretório atual.
+**Motivo:** Aumentar a confiabilidade e portabilidade do projeto.
+
+---
+
+### 3. Controle de navegação com variável `$pagina_atual`
+
+**Problema:** O menu de navegação não indicava qual página estava ativa.
+**Solução:** Implementação da variável `$pagina_atual` em cada página e uso condicional no `nav.php`.
+**Motivo:** Melhorar a experiência do usuário e fornecer feedback visual consistente.
+
+---
+
+### 4. Centralização do CSS
+
+**Problema:** Estilos estavam dispersos ou repetidos entre páginas.
+**Solução:** Criação de um arquivo único (`estilo.css`) dentro da pasta `includes`.
+**Motivo:** Facilitar manutenção, padronizar aparência e evitar redundância.
+
+---
+
+### 5. Gerenciamento de sessão centralizado
+
+**Problema:** Chamadas múltiplas de `session_start()` geravam erros e avisos.
+**Solução:** Centralização da inicialização da sessão no `cabecalho.php`, com verificação usando `session_status()`.
+**Motivo:** Evitar conflitos e garantir controle consistente da sessão.
+
+---
+
+## ▶️ Como executar
+
+No terminal, dentro da pasta do projeto:
+
+```bash
+cd /workspaces/2026-DWII/02_projetoPHP-02_refatorado
+php -S localhost:8000
+```
+
+Acesse no navegador:
+
+```
+http://localhost:8000
+```
+
+---
+
+## 👤 Autor
+
+Rafael Henrique Freire
+Curso Técnico em Informática — IFPR
+Disciplina: Desenvolvimento Web II
+Ano: 2026
