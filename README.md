@@ -7,7 +7,7 @@ Repositório da disciplina **Desenvolvimento Web II** — 2026
 
 ## 👤 Estudante
 
-- **Nome:** Rafael Henrique Freire
+- **Nome:** Rafael Henrique freire
 - **Turma:** 3º ano — Técnico em Informática Integrado ao Ensino Médio
 - **Ano:** 2026
 
